@@ -1,0 +1,14 @@
+{
+    "name": "zf2_151",
+    "description": "Este pacote foi criado apenas para complementar Zend Framework 2",
+    "authors": [
+        {
+            "name": "Pedro151",
+            "email": "phacl@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.*",
+        "Pedro151/zf2_151": "1.*"
+    }
+}
