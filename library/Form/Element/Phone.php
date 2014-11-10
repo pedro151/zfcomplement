@@ -45,7 +45,7 @@ class Phone extends Element implements InputProviderInterface
         // allowed the thousand separator, which resulted in wrong numbers
         // when casting to float.
         $validator = new RegexValidator('/^\+?\(\d{2,3}\)\d{3,4}\-\d{3,4}$/');
-        $validator->setMessage('Please enter 11 or 12 digits only!',
+        $validator->setMessage('insira corretamente o telefone (xxx)xxx-xxxx',
             RegexValidator::NOT_MATCH);
 
         $this->validators[] = $validator;
