@@ -4,7 +4,7 @@
  * @link      https://github.com/pedro151/zf2_151 for the canonical source repository
  */
 
-namespace zf2_151\Form\Element;
+namespace zf2151\Form\Element;
 
 use Zend\Form\Element;
 use Zend\InputFilter\InputProviderInterface;
