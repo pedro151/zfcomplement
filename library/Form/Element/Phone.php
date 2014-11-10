@@ -27,7 +27,7 @@ class Phone extends Element implements InputProviderInterface
     /**
      * @var array
      */
-    protected $validators;
+    protected $validators=array();
 
     /**
      * Get validator
@@ -40,14 +40,15 @@ class Phone extends Element implements InputProviderInterface
             return $this->validators;
         }
 
-        $validators = array();
         // HTML5 always transmits values in the format "1000.01", without a
         // thousand separator. The prior use of the i18n Float validator
         // allowed the thousand separator, which resulted in wrong numbers
         // when casting to float.
-        $validators[] = new RegexValidator('(^\+?\d+(-\d+)*$)');
+        $validator = new RegexValidator('/^\+?\(\d{2,3}\)\d{3,4}\-\d{3,4}$/');
+        $validator->setMessage('Please enter 11 or 12 digits only!',
+            RegexValidator::NOT_MATCH);
 
-        $this->validators = $validators;
+        $this->validators[] = $validator;
         return $this->validators;
     }
 
