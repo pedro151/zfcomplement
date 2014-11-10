@@ -12,8 +12,8 @@
         "zendframework/zendframework": "2.*"
     },
     "autoload": {
-        "psr-1": {
+        "psr-4": {
             "ZfComplemente\\": "zfcomplemente/"
         }
-    },
+    }
 }
