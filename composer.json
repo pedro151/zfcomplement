@@ -13,10 +13,10 @@
     },
     "autoload": {
         "psr-4": {
-            "ZfComplemente\\": ""
+            "ZfComplemente\\": "zfcomplemente/library"
         }
     },
     "autoload-dev": {
-        "psr-4": { "ZfComplemente\\Tests\\": "tests/" }
+        "psr-4": { "ZfComplemente\\Tests\\": "zfcomplemente/tests/" }
     }
 }
