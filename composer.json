@@ -1,5 +1,5 @@
 {
-    "name": "zf2151",
+    "name": "zf-complemente",
     "description": "Este pacote foi criado apenas para complementar Zend Framework 2",
     "authors": [
         {
@@ -9,6 +9,6 @@
     ],
     "require": {
         "php": ">=5.4.*",
-        "Pedro151/zf2_151": "1.*"
+        "zendframework/zendframework": "2.*"
     }
 }
