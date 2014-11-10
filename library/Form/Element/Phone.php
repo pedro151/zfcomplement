@@ -47,33 +47,6 @@ class Phone extends Element implements InputProviderInterface
         // when casting to float.
         $validators[] = new RegexValidator('(^\+?\d+(-\d+)*$)');
 
-        $inclusive = true;
-        if (isset($this->attributes['inclusive'])) {
-            $inclusive = $this->attributes['inclusive'];
-        }
-
-        if (isset($this->attributes['min'])) {
-            $validators[] = new GreaterThanValidator(array(
-                'min' => $this->attributes['min'],
-                'inclusive' => $inclusive
-            ));
-        }
-        if (isset($this->attributes['max'])) {
-            $validators[] = new LessThanValidator(array(
-                'max' => $this->attributes['max'],
-                'inclusive' => $inclusive
-            ));
-        }
-
-        if (!isset($this->attributes['step'])
-            || 'any' !== $this->attributes['step']
-        ) {
-            $validators[] = new StepValidator(array(
-                'baseValue' => (isset($this->attributes['min']))  ? $this->attributes['min'] : 0,
-                'step'      => (isset($this->attributes['step'])) ? $this->attributes['step'] : 1,
-            ));
-        }
-
         $this->validators = $validators;
         return $this->validators;
     }
