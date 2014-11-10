@@ -15,5 +15,8 @@
         "psr-4": {
             "ZfComplemente\\": ""
         }
+    },
+    "autoload-dev": {
+        "psr-4": { "ZfComplemente\\Tests\\": "tests/" }
     }
 }
