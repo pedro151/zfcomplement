@@ -29,16 +29,21 @@ class Bootstrap
 
         static::initAutoloader();
 
-        // use ModuleManager to load this module and it's dependencies
         $config = array(
             'module_listener_options' => array(
                 'module_paths' => $zf2ModulePaths,
             ),
-            'modules' => array()
+            'js_path'=>'js'
+
         );
 
+        self::chroot();
+        $configuration = require_once getcwd ().'/config/application.config.php';
+
+        $configMarge =  array_merge($config,$configuration);
+
         $serviceManager = new ServiceManager(new ServiceManagerConfig());
-        $serviceManager->setService('ApplicationConfig', $config);
+        $serviceManager->setService('ApplicationConfig', $configMarge);
         $serviceManager->get('ModuleManager')->loadModules();
         static::$serviceManager = $serviceManager;
     }
@@ -77,10 +82,12 @@ class Bootstrap
         }
 
         if (file_exists($vendorPath . '/autoload.php')) {
+            var_dump($vendorPath . '/autoload.php');
             include $vendorPath . '/autoload.php';
         }
 
         include $zf2Path . '/Zend/Loader/AutoloaderFactory.php';
+
         AutoloaderFactory::factory(array(
             'Zend\Loader\StandardAutoloader' => array(
                 'autoregister_zf' => true,
@@ -102,9 +109,10 @@ class Bootstrap
             }
             $previousDir = $dir;
         }
+
         return $dir . '/' . $path;
     }
 }
 
-Bootstrap::init();
 Bootstrap::chroot();
+Bootstrap::init();

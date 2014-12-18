@@ -12,11 +12,11 @@
         "zendframework/zendframework": "2.*"
     },
     "autoload": {
-        "psr-4": {
-            "ZfComplemente\\": "zfcomplemente/library"
+        "psr-0": {
+            "ZfComplemente\\": "library"
         }
     },
     "autoload-dev": {
-        "psr-4": { "ZfComplemente\\Tests\\": "zfcomplemente/tests/" }
+        "psr-0": { "ZfComplementeTest\\": "tests/" }
     }
 }
