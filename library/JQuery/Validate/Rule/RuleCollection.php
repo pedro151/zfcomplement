@@ -3,7 +3,7 @@
 namespace ZfComplemente\JQuery\Validate\Rule;
 
 use Zend\Validator\ValidatorInterface;
-use ZfComplemente\Javascript\Filter;
+use ZfComplemente\JQuery\Filter;
 
 class RuleCollection
 {

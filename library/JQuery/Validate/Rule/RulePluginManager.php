@@ -14,24 +14,10 @@ class RulePluginManager extends AbstractPluginManager
      * @var array
      */
     protected $invokableClasses = array (
-        'cpf'          => 'ZfComplemente\Javascript\JqueryValidate\Rule\Cpf',
-        'phone'        => 'ZfComplemente\Javascript\JqueryValidate\Rule\Phone',
-        'emailaddress' => 'ZfComplemente\Javascript\JqueryValidate\Rule\EmailAddress'
+        'cpf'          => 'ZfComplemente\JQuery\Validate\Rule\Cpf',
+        'phone'        => 'ZfComplemente\JQuery\Validate\Rule\Phone',
+        'emailaddress' => 'ZfComplemente\JQuery\Validate\Rule\EmailAddress'
     );
-    /*
-    protected $invokableClasses = array(
-        'between' => 'StrokerForm\Renderer\Validate\Rule\Between',
-        'creditcard' => 'StrokerForm\Renderer\Validate\Rule\CreditCard',
-        'digits' => 'StrokerForm\Renderer\Validate\Rule\Digits',
-        'emailaddress' => 'StrokerForm\Renderer\Validate\Rule\EmailAddress',
-        'greaterthan' => 'StrokerForm\Renderer\Validate\Rule\GreaterThan',
-        'identical' => 'StrokerForm\Renderer\Validate\Rule\Identical',
-        'lessthan' => 'StrokerForm\Renderer\Validate\Rule\LessThan',
-        'notempty' => 'StrokerForm\Renderer\Validate\Rule\NotEmpty',
-        'stringlength' => 'StrokerForm\Renderer\Validate\Rule\StringLength',
-        'uri' => 'StrokerForm\Renderer\Validate\Rule\Uri',
-        'inarray' => 'StrokerForm\Renderer\Validate\Rule\InArray',
-    );*/
 
     /**
      * Constructor

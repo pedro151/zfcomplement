@@ -1,12 +1,5 @@
 <?php
-/**
- * RendererFactory
- *
- * @category  StrokerForm\Factory\Renderer\Validate
- * @package   StrokerForm\Factory\Renderer\Validate
- * @copyright 2013 ACSI Holding bv (http://www.acsi.eu)
- * @version   SVN: $Id$
- */
+
 
 namespace ZfComplemente\JQuery\Validate\Factory;
 
@@ -15,6 +8,10 @@ use ZfComplemente\JQuery\Validate\Rule\RulePluginManager;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
+/**
+ * Class RuleFactory
+ * @package ZfComplemente\JQuery\Validate\Factory
+ */
 class RuleFactory implements FactoryInterface
 {
     /**

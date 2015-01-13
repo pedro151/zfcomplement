@@ -1,13 +1,5 @@
 <?php
-/**
- * Options for the jquery validate renderer
- *
- * @category   StrokerForm
- * @package    StrokerForm\Renderer
- * @subpackage Validate
- * @copyright  2012 Bram Gerritsen
- * @version    SVN: $Id$
- */
+
 
 namespace ZfComplemente\JQuery\Validate;
 
@@ -28,7 +20,7 @@ class Options extends AbstractOptions
     /**
      * @var string
      */
-    private $initializeTrigger = '$(document).ready(function(){%s});';
+    private $initializeTrigger = 'JQuery(document).ready(function(){%s});';
 
     /**
      * @var array

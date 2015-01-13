@@ -5,6 +5,10 @@ namespace ZfComplemente\JQuery\Validate\Rule;
 use Zend\Validator\ValidatorInterface;
 use Zend\I18n\Translator\TranslatorAwareInterface;
 
+/**
+ * Class RuleTrait
+ * @package ZfComplemente\JQuery\Validate\Rule
+ */
 trait RuleTrait
 {
 
@@ -55,6 +59,9 @@ trait RuleTrait
     }
 
 
+    /**
+     * @return bool
+     */
     public function hasFile ()
     {
         return !empty( $this->_jsFile ) ? true : false;

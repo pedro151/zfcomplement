@@ -9,11 +9,24 @@
 namespace ZfComplemente\JQuery\Validate\Rule;
 
 
+/**
+ * Class Cpf
+ * @package ZfComplemente\JQuery\Validate\Rule
+ */
 class Cpf extends AbstractRule
 {
     use RuleTrait;
 
+    /**
+     * @var string
+     */
     protected $_rule='cpf';
-    protected $_message = 'Informe um CPF válido.';
+    /**
+     * @var string
+     */
+    protected $_message = 'Enter a valid CPF.';
+    /**
+     * @var string
+     */
     protected $_jsFile='jquery.cpf.js';
 }
