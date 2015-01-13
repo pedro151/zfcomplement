@@ -1,7 +1,7 @@
 <?php
 
 
-namespace ZfComplemente\JQuery\Validate\Factory;
+namespace ZfComplemente\JQuery\Validate\Service;
 
 use ZfComplemente\JQuery\Validate\Rule\RuleCollection;
 use ZfComplemente\JQuery\Validate\Rule\RulePluginManager;
@@ -10,7 +10,7 @@ use Zend\ServiceManager\ServiceLocatorInterface;
 
 /**
  * Class RuleFactory
- * @package ZfComplemente\JQuery\Validate\Factory
+ * @package ZfComplemente\JQuery\Validate\Service
  */
 class RuleFactory implements FactoryInterface
 {
