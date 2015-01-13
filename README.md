@@ -6,12 +6,12 @@ in module.config.php insert
         'factories' => array (
             'Form' => function ( $sm )
             {
-                return new ZfComplemente\JQuery\Validate\View\Helper\Form($sm);
+                return new ZfComplement\JQuery\Validate\View\Helper\Form($sm);
             }
         )
     ),
     'service_manager' => array (
         'factories'          => array (
-            'Rule' => 'ZfComplemente\JQuery\Validate\Service\RuleFactory',
+            'Rule' => 'ZfComplement\JQuery\Validate\Service\RuleFactory',
         ),
     ),
