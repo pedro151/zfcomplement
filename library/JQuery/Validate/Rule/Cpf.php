@@ -6,12 +6,12 @@
  * Time: 10:09
  */
 
-namespace ZfComplemente\JQuery\Validate\Rule;
+namespace ZfComplement\JQuery\Validate\Rule;
 
 
 /**
  * Class Cpf
- * @package ZfComplemente\JQuery\Validate\Rule
+ * @package ZfComplement\JQuery\Validate\Rule
  */
 class Cpf extends AbstractRule
 {

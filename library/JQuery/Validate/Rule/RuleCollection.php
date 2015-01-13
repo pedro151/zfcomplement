@@ -1,9 +1,9 @@
 <?php
 
-namespace ZfComplemente\JQuery\Validate\Rule;
+namespace ZfComplement\JQuery\Validate\Rule;
 
 use Zend\Validator\ValidatorInterface;
-use ZfComplemente\JQuery\Filter;
+use ZfComplement\JQuery\Filter;
 
 class RuleCollection
 {

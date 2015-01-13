@@ -1,6 +1,6 @@
 <?php
 
-namespace ZfComplemente\JQuery\Validate\Rule;
+namespace ZfComplement\JQuery\Validate\Rule;
 
 use Zend\I18n\Translator\Translator;
 use Zend\I18n\Translator\TranslatorInterface;

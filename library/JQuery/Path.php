@@ -6,7 +6,7 @@
  * Time: 17:34
  */
 
-namespace ZfComplemente\JQuery;
+namespace ZfComplement\JQuery;
 
 
 use Zend\ServiceManager\ServiceLocatorInterface;

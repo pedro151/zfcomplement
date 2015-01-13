@@ -6,7 +6,7 @@
  * Time: 10:09
  */
 
-namespace ZfComplemente\JQuery\Validate\Rule;
+namespace ZfComplement\JQuery\Validate\Rule;
 
 
 class Phone extends AbstractRule

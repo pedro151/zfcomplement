@@ -1,5 +1,5 @@
 {
-    "name": "pedro151/zfcomplemente",
+    "name": "pedro151/ZfComplement",
     "description": "Este pacote foi criado apenas para complementar Zend Framework 2",
     "authors": [
         {
@@ -13,10 +13,10 @@
     },
     "autoload": {
         "psr-0": {
-            "ZfComplemente\\": "library/"
+            "ZfComplement\\": "library/"
         }
     },
     "autoload-dev": {
-        "psr-0": { "ZfComplementeTest\\": "tests/" }
+        "psr-0": { "ZfComplementTest\\": "tests/" }
     }
 }

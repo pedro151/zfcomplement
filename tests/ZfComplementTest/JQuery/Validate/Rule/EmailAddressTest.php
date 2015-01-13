@@ -6,9 +6,9 @@
  * Time: 19:14
  */
 
-namespace ZfComplementeTest\JQuery\Validate\Rule;
+namespace ZfComplementTest\JQuery\Validate\Rule;
 
-use ZfComplemente\JQuery\Validate\Rule\EmailAddress;
+use ZfComplement\JQuery\Validate\Rule\EmailAddress;
 
 class EmailAddressTest extends \PHPUnit_Framework_TestCase {
 

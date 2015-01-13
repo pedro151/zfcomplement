@@ -1,6 +1,6 @@
 <?php
 
-namespace ZfComplemente\JQuery\Validate\View\Helper;
+namespace ZfComplement\JQuery\Validate\View\Helper;
 
 use Zend\Form\ElementInterface;
 use Zend\Form\FieldsetInterface;
@@ -8,9 +8,9 @@ use Zend\Form\FormInterface;
 use Zend\InputFilter\InputFilterInterface;
 use Zend\Json\Json;
 use Zend\ServiceManager\ServiceLocatorInterface;
-use ZfComplemente\JQuery\Filter;
-use ZfComplemente\JQuery\Validate\Options;
-use ZfComplemente\JQuery\Validate\Rule\RuleInterface;
+use ZfComplement\JQuery\Filter;
+use ZfComplement\JQuery\Validate\Options;
+use ZfComplement\JQuery\Validate\Rule\RuleInterface;
 
 class Form extends \Zend\Form\View\Helper\Form
 {

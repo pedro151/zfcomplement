@@ -1,6 +1,6 @@
 <?php
 
-namespace ZfComplementeTest;
+namespace ZfComplementTest;
 
 use Zend\Loader\AutoloaderFactory;
 use Zend\Mvc\Service\ServiceManagerConfig;

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace ZfComplemente\JQuery\Validate;
+namespace ZfComplement\JQuery\Validate;
 
 use Zend\Stdlib\AbstractOptions;
 

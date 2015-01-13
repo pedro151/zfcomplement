@@ -13,7 +13,7 @@
         bootstrap="Bootstrap.php">
     <testsuites>
         <testsuite name="sanzf2">
-            <directory suffix=".php">./ZfCompleteTest</directory>
+            <directory suffix=".php">./ZfComplementTest</directory>
         </testsuite>
     </testsuites>
 </phpunit>

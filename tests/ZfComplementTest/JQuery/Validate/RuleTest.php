@@ -6,13 +6,13 @@
  * Time: 16:45
  */
 
-namespace ZfComplementeTest\JQuery\Validate;
+namespace ZfComplementTest\JQuery\Validate;
 
 use Zend\Debug\Debug;
 use Zend\Stdlib\ArrayUtils;
-use ZfComplemente\JQuery\Validate\Cpf;
-use ZfComplemente\JQuery\Validate\Phone;
-use ZfComplemente\JQuery\Validate\Rule;
+use ZfComplement\JQuery\Validate\Cpf;
+use ZfComplement\JQuery\Validate\Phone;
+use ZfComplement\JQuery\Validate\Rule;
 
 class RuleTest extends \PHPUnit_Framework_TestCase
 {

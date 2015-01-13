@@ -6,12 +6,12 @@
  * Time: 17:49
  */
 
-namespace ZfComplementeTest\JQuery\Validate;
+namespace ZfComplementTest\JQuery\Validate;
 
 
 use Zend\Debug\Debug;
-use ZfComplemente\JQuery\Path;
-use ZfComplementeTest\Bootstrap;
+use ZfComplement\JQuery\Path;
+use ZfComplementTest\Bootstrap;
 
 class PathTest extends \PHPUnit_Framework_TestCase
 {

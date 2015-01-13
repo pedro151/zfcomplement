@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace ZfComplemente\JQuery\Exception;
+namespace ZfComplement\JQuery\Exception;
 
 class InvalidElementException extends InvalidArgumentException
 {}

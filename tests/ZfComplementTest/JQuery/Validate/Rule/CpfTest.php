@@ -5,10 +5,10 @@
  * Date: 18/12/14
  * Time: 15:27
  */
-namespace ZfComplementeTest\JQuery\Validate\Rule;
+namespace ZfComplementTest\JQuery\Validate\Rule;
 
 
-use ZfComplemente\JQuery\Validate\Rule\Cpf;
+use ZfComplement\JQuery\Validate\Rule\Cpf;
 
 class CpfTest extends \PHPUnit_Framework_TestCase {
 

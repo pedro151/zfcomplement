@@ -1,6 +1,6 @@
 <?php
 
-namespace ZfComplemente\JQuery\Validate\Rule;
+namespace ZfComplement\JQuery\Validate\Rule;
 
 use Zend\I18n\Translator\TranslatorAwareInterface;
 use Zend\ServiceManager\AbstractPluginManager;
@@ -14,9 +14,9 @@ class RulePluginManager extends AbstractPluginManager
      * @var array
      */
     protected $invokableClasses = array (
-        'cpf'          => 'ZfComplemente\JQuery\Validate\Rule\Cpf',
-        'phone'        => 'ZfComplemente\JQuery\Validate\Rule\Phone',
-        'emailaddress' => 'ZfComplemente\JQuery\Validate\Rule\EmailAddress'
+        'cpf'          => 'ZfComplement\JQuery\Validate\Rule\Cpf',
+        'phone'        => 'ZfComplement\JQuery\Validate\Rule\Phone',
+        'emailaddress' => 'ZfComplement\JQuery\Validate\Rule\EmailAddress'
     );
 
     /**

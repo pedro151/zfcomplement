@@ -6,7 +6,7 @@
  * Time: 19:02
  */
 
-namespace ZfComplemente\JQuery;
+namespace ZfComplement\JQuery;
 
 
 use Zend\Form\ElementInterface;

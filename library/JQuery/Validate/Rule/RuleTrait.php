@@ -1,13 +1,13 @@
 <?php
 
-namespace ZfComplemente\JQuery\Validate\Rule;
+namespace ZfComplement\JQuery\Validate\Rule;
 
 use Zend\Validator\ValidatorInterface;
 use Zend\I18n\Translator\TranslatorAwareInterface;
 
 /**
  * Class RuleTrait
- * @package ZfComplemente\JQuery\Validate\Rule
+ * @package ZfComplement\JQuery\Validate\Rule
  */
 trait RuleTrait
 {

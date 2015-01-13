@@ -1,6 +1,6 @@
 <?php
 
-namespace ZfComplemente\JQuery\Validate\Rule;
+namespace ZfComplement\JQuery\Validate\Rule;
 
 class EmailAddress extends AbstractRule
 {
