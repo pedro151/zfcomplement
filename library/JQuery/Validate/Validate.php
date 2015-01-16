@@ -9,6 +9,7 @@
 namespace ZfComplement\JQuery\Validate;
 
 
+use Zend\Debug\Debug;
 use Zend\Form\ElementInterface;
 use Zend\Form\FieldsetInterface;
 use Zend\Form\FormInterface;

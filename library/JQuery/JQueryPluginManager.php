@@ -80,8 +80,8 @@ class JQueryPluginManager extends AbstractPluginManager
             $JQuery->setServiceLocator ( $this->getServiceLocator () );
             $this->initJQueryFiles ();
             $JQuery->__invoke ();
-            $this->instanceFilesJS ( $JQuery->getFiles () );
             $this->initScriptJS ( $JQuery->getScript () );
+            $this->instanceFilesJS ( $JQuery->getFiles () );
         }
     }
 

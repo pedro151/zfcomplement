@@ -28,5 +28,5 @@ class Cpf extends AbstractRule
     /**
      * @var string
      */
-    protected $_jsFile='validate.cpf.js';
+    protected $_jsFile='jquery.cpf.js';
 }

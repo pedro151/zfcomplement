@@ -9,6 +9,19 @@ use Zend\Validator\AbstractValidator;
 abstract class AbstractRule implements RuleInterface
 {
     /**
+     * @var string
+     */
+    protected $_rule;
+    /**
+     * @var string
+     */
+    protected $_message;
+    /**
+     * @var string
+     */
+    protected $_jsFile;
+
+    /**
      * @var TranslatorInterface
      */
     protected $translator = null;

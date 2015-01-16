@@ -64,6 +64,6 @@ trait RuleTrait
      */
     public function hasFile ()
     {
-        return !empty( $this->_jsFile ) ? true : false;
+        return isset( $this->_jsFile ) ? true : false;
     }
 }

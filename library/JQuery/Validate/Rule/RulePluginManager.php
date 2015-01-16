@@ -15,6 +15,7 @@ class RulePluginManager extends AbstractPluginManager
      */
     protected $invokableClasses = array (
         'cpf'          => 'ZfComplement\JQuery\Validate\Rule\Cpf',
+        'cnpj'         => 'ZfComplement\JQuery\Validate\Rule\Cnpj',
         'phone'        => 'ZfComplement\JQuery\Validate\Rule\Phone',
         'emailaddress' => 'ZfComplement\JQuery\Validate\Rule\EmailAddress'
     );
@@ -29,12 +30,12 @@ class RulePluginManager extends AbstractPluginManager
      */
     public function __construct ( ConfigInterface $configuration = null )
     {
-        parent::__construct ($configuration);
+        parent::__construct ( $configuration );
 
-        $this->addInitializer (array (
+        $this->addInitializer ( array (
             $this,
             'injectTranslator'
-        ));
+        ) );
     }
 
     /**
@@ -48,11 +49,11 @@ class RulePluginManager extends AbstractPluginManager
             return;
         }
 
-        throw new \InvalidArgumentException(sprintf (
+        throw new \InvalidArgumentException( sprintf (
             'Plugin of type %s is invalid; must implement %s\RuleInterface',
-            ( is_object ($plugin) ? get_class ($plugin) : gettype ($plugin) ),
+            ( is_object ( $plugin ) ? get_class ( $plugin ) : gettype ( $plugin ) ),
             __NAMESPACE__
-        ));
+        ) );
     }
 
     /**
@@ -66,13 +67,13 @@ class RulePluginManager extends AbstractPluginManager
         if ( $rule instanceof TranslatorAwareInterface )
         {
             $locator = $this->getServiceLocator ();
-            if ( $locator && $locator->has ('MvcTranslator') )
+            if ( $locator && $locator->has ( 'MvcTranslator' ) )
             {
-                $rule->setTranslator ($locator->get ('MvcTranslator'));
+                $rule->setTranslator ( $locator->get ( 'MvcTranslator' ) );
             }
-            elseif ( $locator && $locator->has ('translator') )
+            elseif ( $locator && $locator->has ( 'translator' ) )
             {
-                $rule->setTranslator ($locator->get ('translator'));
+                $rule->setTranslator ( $locator->get ( 'translator' ) );
             }
         }
     }
