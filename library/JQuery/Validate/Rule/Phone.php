@@ -15,5 +15,5 @@ class Phone extends AbstractRule
 
     protected $_role='phone';
     protected $_message = '';
-    protected $_jsFile='jquery.cpf.js';
+    protected $_jsFile='validate.cpf.js';
 }

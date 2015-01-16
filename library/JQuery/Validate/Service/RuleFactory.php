@@ -3,7 +3,8 @@
 
 namespace ZfComplement\JQuery\Validate\Service;
 
-use ZfComplement\JQuery\Validate\Rule\RuleCollection;
+use ZfComplement\JQuery\JQueryPluginManagerAwareInterface;
+use ZfComplement\JQuery\Validate\Rule\RulePlugin;
 use ZfComplement\JQuery\Validate\Rule\RulePluginManager;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
@@ -22,11 +23,11 @@ class RuleFactory implements FactoryInterface
      */
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
-        $collection = new RuleCollection();
+        $plugin = new RulePlugin();
         $pluginManager = new RulePluginManager();
 
         $pluginManager->setServiceLocator($serviceLocator);
-        $collection->setPluginManager($pluginManager);
-        return $collection;
+        $plugin->setPluginManager($pluginManager);
+        return $plugin;
     }
 }

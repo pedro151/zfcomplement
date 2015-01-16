@@ -27,7 +27,7 @@ class Filter {
             return;
         }
         $namespaces = explode('\\', get_class($object));
-        return end($namespaces);
+        return strtolower(end($namespaces));
     }
 
 

@@ -5,7 +5,7 @@ namespace ZfComplement\JQuery\Validate\Rule;
 use Zend\Validator\ValidatorInterface;
 use ZfComplement\JQuery\Filter;
 
-class RuleCollection
+class RulePlugin
 {
     /**
      * @var RulePluginManager
