@@ -6,7 +6,7 @@ Zend Framework 2 - JQuery Validate
 
 1) move the 'js' folder to the 'public'
 
-2) in 'config/autoload/global.php' insert:
+2) in `config/autoload/global.php` insert:
 
 ```php
      'zf-complement' => array (
@@ -27,12 +27,16 @@ Zend Framework 2 - JQuery Validate
      )
 ```
 
-3) with a 'view/layout/layout.php' enter the above code the function 'headScript' and 'InlineScript'
+3) with a `view/layout/layout.php` enter the above code the function `headScript` and `InlineScript`
 
+```php
     <?php $this->jquery()->get('validate');?>
+```
 
 4) use the function below the controller to enter forms in view:
 
+```php
         $this->getEvent ()
              ->getViewModel ()
              ->setVariables ( array('form'=>$form) );
+```
