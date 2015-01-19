@@ -26,14 +26,26 @@ Zend Framework 2 - JQuery Validate
         ),
      )
 ```
+3)in `module.config.php` insert:
 
-3) with a `view/layout/layout.php` enter the above code the function `headScript` and `InlineScript`
+```php
+    'view_helpers'    => array (
+        'factories' => array (
+            'Jquery' => function ( $sm )
+            {
+                return new ZfComplement\JQuery\View\Helper\Jquery($sm);
+            }
+        )
+    ),
+```
+
+4) with a `view/layout/layout.php` enter the above code the function `headScript` and `InlineScript`
 
 ```php
     <?php $this->jquery()->get('validate');?>
 ```
 
-4) use the function below the controller to enter forms in view:
+5) use the function below the controller to enter forms in view:
 
 ```php
         $this->getEvent ()
