@@ -2,7 +2,9 @@ Zf2 ZfComplement
 =========
 
 Zend Framework 2 - JQuery Validate
-=========
+===
+
+Install for composer: "pedro151/zfcomplement": "dev-master"
 
 1) move the 'js' folder to the 'public'
 
